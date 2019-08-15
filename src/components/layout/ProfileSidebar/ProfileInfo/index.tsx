@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Person from '../../../assets/img/person1.jpg';
+import Person from '../../../../assets/img/person1.jpg';
 import Typing from '../Typing';
 
 const ProfileInfo: React.FC = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ProfileInfo from '../ProfileInfo';
+import ProfileInfo from './ProfileInfo';
 
 const ProfileSidebar: React.FC = () => {
   return (
