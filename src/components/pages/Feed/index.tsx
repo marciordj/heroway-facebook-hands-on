@@ -1,44 +1,15 @@
 import React from 'react';
-import * as ReactRedux from 'react-redux';
 
-import { IAppState } from '../../../redux/configureStore';
-import { getPosts } from '../../../redux/reducers/posts';
 import Post from './Post';
 
-interface IStateProps {
-  postsState: any;
-}
-
-interface IDispatchProps {
-  getPosts: () => void;
-}
-
-type IProps = IStateProps & IDispatchProps;
-
-class Feed extends React.Component<IProps> {
-  componentDidMount() {
-    this.props.getPosts();
-  }
-
-  render() {
-    return (
-      <div className="feed">
-        <div className="container">
-          <Post />
-        </div>
+const Feed = () => {
+  return (
+    <div className="feed">
+      <div className="container">
+        <Post />
       </div>
-    );
-  }
-}
-
-const mapStateToProps = (state: IAppState) => {
-  return {
-    postsState: state.posts
-  };
+    </div>
+  );
 };
 
-const mapDispatchToProps: IDispatchProps = {
-  getPosts
-};
-
-export default ReactRedux.connect(mapStateToProps, mapDispatchToProps)(Feed);
+export default Feed;
