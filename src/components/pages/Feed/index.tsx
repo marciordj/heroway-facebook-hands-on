@@ -3,8 +3,6 @@ import * as ReactRedux from 'react-redux';
 
 import { IAppState } from '../../../redux/configureStore';
 import { getPosts } from '../../../redux/reducers/posts';
-import Header from '../../layout/Header';
-import ProfileSidebar from '../../layout/ProfileSidebar';
 import Post from './Post';
 
 interface IStateProps {
@@ -24,15 +22,11 @@ class Feed extends React.Component<IProps> {
 
   render() {
     return (
-      <>
-        <Header />
-        <div className="feed">
-          <div className="container">
-            <Post />
-          </div>
+      <div className="feed">
+        <div className="container">
+          <Post />
         </div>
-        <ProfileSidebar />
-      </>
+      </div>
     );
   }
 }
