@@ -10,7 +10,7 @@ const PostHeader: React.FC = () => {
           <img src={Person} alt="Profile" />
         </div>
       </div>
-      <div className="post-header-pofile-name">
+      <div className="post-header-profile-name">
         <div className="profile-name">João da Silva</div>
         <div className="post-date">Feb 17 at 10:45PM</div>
       </div>
